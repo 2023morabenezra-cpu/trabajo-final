@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App de ejemplo para usar make.com</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="chat-app">
+    <header class="chat-header">
+      <span class="badge">App de ejemplo para usar make.com</span>
+    </header>
+
+    <section id="chat-messages" class="chat-messages" aria-live="polite">
+      <p id="empty-state" class="empty-state">
+        Las respuestas de Make van a aparecer acá.
+      </p>
+    </section>
+
+    <footer class="chat-footer">
+      <form id="chat-form" class="chat-form">
+        <textarea
+          id="message-input"
+          class="message-input"
+          rows="2"
+          placeholder="Escribí un mensaje..."
+          required
+        ></textarea>
+        <button type="submit" id="send-button" class="send-button" aria-label="Enviar mensaje">
+          ↑
+        </button>
+      </form>
+      <p class="disclaimer">
+        Proyecto de demostración. No ingreses datos personales.
+      </p>
+    </footer>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
